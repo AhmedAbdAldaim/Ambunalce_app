@@ -29,7 +29,7 @@ class _CustomHomeGoogleMapState extends State<CustomHomeGoogleMap> {
               },
               mapType: widget.cubit.mapType,
               initialCameraPosition: widget.cubit.initialCameraPosition,
-              minMaxZoomPreference: const MinMaxZoomPreference(6.0, 20.0),
+             // minMaxZoomPreference: const MinMaxZoomPreference(6.0, 20.0),
 
               markers: {
                 if (widget.cubit.latitude != null &&
@@ -45,16 +45,16 @@ class _CustomHomeGoogleMapState extends State<CustomHomeGoogleMap> {
               style: Theme.of(context).colorScheme.brightness == Brightness.dark
                   ? widget.cubit.mapStyle
                   : null,
-              cameraTargetBounds: CameraTargetBounds(
+             // cameraTargetBounds: CameraTargetBounds(
                 // LatLngBounds(
                 //   southwest: const LatLng(22.6333, 51.5833),
                 //   northeast: const LatLng(26.0649, 56.3838),
                 // ),
-                LatLngBounds(
-                  southwest: const LatLng(8.6, 21.8),
-                  northeast: const LatLng(22.0, 38.6),
-                ),
-              ),
+                // LatLngBounds(
+                //   southwest: const LatLng(8.6, 21.8),
+                //   northeast: const LatLng(22.0, 38.6),
+                // ),
+            //  ),
 
               zoomControlsEnabled: false,
               //  myLocationEnabled: true,

@@ -12,8 +12,9 @@ class AuthModel{
 
 class User{
   final String email;
-  User({required this.email});
+  final String name;
+  User({required this.email, required this.name});
   factory User.fromJson(Map<String, dynamic>json){
-    return User(email:json['email']);
+    return User(email:json['email'], name:json['name']);
   }
 }

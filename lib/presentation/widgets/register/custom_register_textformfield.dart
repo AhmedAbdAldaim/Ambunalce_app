@@ -23,6 +23,9 @@ class CustomRegisterTextformfield extends StatelessWidget {
            getIt
               .get<SharedPrefrencesHelper>()
               .setData(key: 'email', value: state.model.user!.email);
+                 getIt
+              .get<SharedPrefrencesHelper>()
+              .setData(key: 'name', value: state.model.user!.name);
           getIt
               .get<SharedPrefrencesHelper>()
               .setData(

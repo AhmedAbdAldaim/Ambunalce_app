@@ -1,4 +1,6 @@
 import 'package:ambulance/core/helper/fun.dart';
+import 'package:ambulance/core/service_locator.dart';
+import 'package:ambulance/data/data_sourse/local/shared_prefrence.dart';
 import 'package:ambulance/presentation/widgets/home/custom_home_icon_button.dart';
 import 'package:ambulance/view_model/homeCubit/home_cubit.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +27,7 @@ class CustomHomeMapButton extends StatelessWidget {
               }),
           Expanded(
             child: Text(
-              'Ahmed Ail',
+              getIt.get<SharedPrefrencesHelper>().getData(key: 'name'),
               textAlign: TextAlign.center,
               style: AppStyles.textstyle04,
             ),
